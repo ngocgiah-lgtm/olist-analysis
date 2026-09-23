@@ -1,0 +1,2053 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='d5b5a958764ff510eadb556bac4187f5eb6cde29a167489d2e26a9307266f302' _.fcp.WorkbookFingerprinting.true...creator-author-id='d5b5a958764ff510eadb556bac4187f5eb6cde29a167489d2e26a9307266f302' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='d5b5a958764ff510eadb556bac4187f5eb6cde29a167489d2e26a9307266f302' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='d5b5a958764ff510eadb556bac4187f5eb6cde29a167489d2e26a9307266f302' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IndividualControlFormatting />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='another blu' type='ordered-sequential'>
+      <color>#afdefd</color>
+      <color>#4e79a7</color>
+    </color-palette>
+    <color-palette custom='true' name='blue' type='ordered-sequential'>
+      <color>#a0cbe8</color>
+      <color>#a0cbe8</color>
+      <color>#a0cbe8</color>
+      <color>#83b3d7</color>
+      <color>#75a6cc</color>
+      <color>#6798c1</color>
+      <color>#598ab6</color>
+      <color>#4e79a7</color>
+      <color>#4e79a7</color>
+      <color>#4e79a7</color>
+      <color>#2a5783</color>
+    </color-palette>
+  </preferences>
+  <datasources>
+    <datasource caption='olist_order_analysis' inline='true' name='federated.1rac9v31se0o4g17chb0j1scequ5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='olist_order_analysis' name='textscan.1q0nmod1yhgguz18ilhvv1rh1yzt'>
+            <connection class='textscan' directory='/Users/giahan/Documents/GitHub/olist-analysis/data/processed' filename='olist_order_analysis.tsv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1q0nmod1yhgguz18ilhvv1rh1yzt' name='olist_order_analysis.tsv' table='[olist_order_analysis#tsv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='string' name='customer_id' ordinal='1' />
+            <column datatype='string' name='customer_unique_id' ordinal='2' />
+            <column datatype='string' name='customer_city' ordinal='3' />
+            <column datatype='string' name='customer_state' ordinal='4' />
+            <column datatype='string' name='order_status' ordinal='5' />
+            <column datatype='datetime' name='order_purchase_timestamp' ordinal='6' />
+            <column datatype='datetime' name='order_approved_at' ordinal='7' />
+            <column datatype='datetime' name='order_delivered_carrier_date' ordinal='8' />
+            <column datatype='datetime' name='order_delivered_customer_date' ordinal='9' />
+            <column datatype='datetime' name='order_estimated_delivery_date' ordinal='10' />
+            <column datatype='integer' name='item_count' ordinal='11' />
+            <column datatype='integer' name='distinct_product_count' ordinal='12' />
+            <column datatype='integer' name='seller_count' ordinal='13' />
+            <column datatype='real' name='merchandise_value' ordinal='14' />
+            <column datatype='real' name='freight_value' ordinal='15' />
+            <column datatype='real' name='item_total_value' ordinal='16' />
+            <column datatype='integer' name='payment_record_count' ordinal='17' />
+            <column datatype='real' name='payment_value' ordinal='18' />
+            <column datatype='integer' name='review_count' ordinal='19' />
+            <column datatype='real' name='review_score' ordinal='20' />
+            <column datatype='integer' name='delivery_days' ordinal='21' />
+            <column datatype='integer' name='delivery_variance_days' ordinal='22' />
+            <column datatype='integer' name='on_time_flag' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_unique_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_unique_id]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>customer_unique_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_city]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>customer_city</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_state]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>customer_state</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_status]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>order_status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_purchase_timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_purchase_timestamp]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>order_purchase_timestamp</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_approved_at</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_approved_at]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>order_approved_at</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_delivered_carrier_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_delivered_carrier_date]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>order_delivered_carrier_date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_delivered_customer_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_delivered_customer_date]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>order_delivered_customer_date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_estimated_delivery_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_estimated_delivery_date]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>order_estimated_delivery_date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[item_count]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>item_count</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distinct_product_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distinct_product_count]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>distinct_product_count</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seller_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[seller_count]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>seller_count</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merchandise_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[merchandise_value]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>merchandise_value</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freight_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[freight_value]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>freight_value</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_total_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[item_total_value]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>item_total_value</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_record_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[payment_record_count]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>payment_record_count</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[payment_value]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>payment_value</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_count]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>review_count</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_score]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>review_score</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[delivery_days]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>delivery_days</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_variance_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[delivery_variance_days]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>delivery_variance_days</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>on_time_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[on_time_flag]</local-name>
+            <parent-name>[olist_order_analysis.tsv]</parent-name>
+            <remote-alias>on_time_flag</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='On-Time Rate' datatype='real' default-format='p0.00%' name='[Calculation_1422266529726464]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([on_time_flag])' />
+      </column>
+      <column caption='Delivery Performance' datatype='string' name='[Calculation_1422266529918977]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ISNULL([delivery_variance_days]) THEN NULL&#10;ELSEIF [delivery_variance_days] &lt; 0 THEN &quot;Early&quot;&#10;ELSEIF [delivery_variance_days] = 0 THEN &quot;On time&quot;&#10;ELSEIF [delivery_variance_days] &lt;= 3 THEN &quot;1-3 days late&quot;&#10;ELSEIF [delivery_variance_days] &lt;= 7 THEN &quot;4-7 days late&quot;&#10;ELSEIF [delivery_variance_days] &lt;= 14 THEN &quot;8-14 days late&quot;&#10;ELSE &quot;15+ days late&quot;&#10;END' />
+      </column>
+      <column caption='Freight to Merchandise %' datatype='real' name='[Calculation_1422266530529282]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([freight_value]) / SUM([merchandise_value])' />
+      </column>
+      <column caption='Fulfillment Evaluable Order' datatype='string' name='[Calculation_1422266542686211]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF NOT ISNULL([on_time_flag]) THEN [order_id] END' />
+      </column>
+      <column caption='olist_order_analysis.tsv' datatype='table' name='[__tableau_internal_object_id__].[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]' role='measure' type='quantitative' />
+      <column caption='Customer City' datatype='string' name='[customer_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+      <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Customer Unique Id' datatype='string' name='[customer_unique_id]' role='dimension' type='nominal' />
+      <column caption='Delivery Days' datatype='integer' name='[delivery_days]' role='measure' type='quantitative' />
+      <column caption='Delivery Variance Days' datatype='integer' name='[delivery_variance_days]' role='measure' type='quantitative' />
+      <column caption='Distinct Product Count' datatype='integer' name='[distinct_product_count]' role='measure' type='quantitative' />
+      <column caption='Freight Value' datatype='real' name='[freight_value]' role='measure' type='quantitative' />
+      <column caption='Item Count' datatype='integer' name='[item_count]' role='measure' type='quantitative' />
+      <column caption='Item Total Value' datatype='real' name='[item_total_value]' role='measure' type='quantitative' />
+      <column caption='Merchandise Value' datatype='real' name='[merchandise_value]' role='measure' type='quantitative' />
+      <column caption='On Time Flag' datatype='integer' name='[on_time_flag]' role='measure' type='quantitative' />
+      <column caption='Order Approved At' datatype='datetime' name='[order_approved_at]' role='dimension' type='ordinal' />
+      <column caption='Order Delivered Carrier Date' datatype='datetime' name='[order_delivered_carrier_date]' role='dimension' type='ordinal' />
+      <column caption='Order Delivered Customer Date' datatype='datetime' name='[order_delivered_customer_date]' role='dimension' type='ordinal' />
+      <column caption='Order Estimated Delivery Date' datatype='datetime' name='[order_estimated_delivery_date]' role='dimension' type='ordinal' />
+      <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+      <column caption='Order Purchase Timestamp' datatype='datetime' name='[order_purchase_timestamp]' role='dimension' type='ordinal' />
+      <column caption='Order Status' datatype='string' name='[order_status]' role='dimension' type='nominal' />
+      <column caption='Payment Record Count' datatype='integer' name='[payment_record_count]' role='measure' type='quantitative' />
+      <column caption='Payment Value' datatype='real' name='[payment_value]' role='measure' type='quantitative' />
+      <column caption='Review Count' datatype='integer' name='[review_count]' role='measure' type='quantitative' />
+      <column caption='Review Score' datatype='real' name='[review_score]' role='measure' type='quantitative' />
+      <column caption='Seller Count' datatype='integer' name='[seller_count]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='customer_state, customer_city'>
+          <field>[customer_state]</field>
+          <field>[customer_city]</field>
+        </drill-path>
+      </drill-paths>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/23/32flsj7541320lnjbtdrn1rm0000gn/T/tableau-temp/#TableauTemp_0chweit1wgdkl215rm1gh0fxjeve.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/23/2026 01:09:25 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>order_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99441</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99441</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_unique_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_unique_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_unique_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99441</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_city</remote-alias>
+              <ordinal>3</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3314</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_state</remote-alias>
+              <ordinal>4</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_status</remote-alias>
+              <ordinal>5</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_purchase_timestamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[order_purchase_timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_purchase_timestamp</remote-alias>
+              <ordinal>6</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>99441</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_approved_at</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[order_approved_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_approved_at</remote-alias>
+              <ordinal>7</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>99441</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_delivered_carrier_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[order_delivered_carrier_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_delivered_carrier_date</remote-alias>
+              <ordinal>8</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>67272</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_delivered_customer_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[order_delivered_customer_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_delivered_customer_date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>92766</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_estimated_delivery_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[order_estimated_delivery_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_estimated_delivery_date</remote-alias>
+              <ordinal>10</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1099</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>item_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[item_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>item_count</remote-alias>
+              <ordinal>11</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distinct_product_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[distinct_product_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distinct_product_count</remote-alias>
+              <ordinal>12</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>seller_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[seller_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>seller_count</remote-alias>
+              <ordinal>13</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>merchandise_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[merchandise_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>merchandise_value</remote-alias>
+              <ordinal>14</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4251</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>freight_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[freight_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>freight_value</remote-alias>
+              <ordinal>15</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7183</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>item_total_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[item_total_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>item_total_value</remote-alias>
+              <ordinal>16</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22940</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_record_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[payment_record_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment_record_count</remote-alias>
+              <ordinal>17</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[payment_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment_value</remote-alias>
+              <ordinal>18</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23315</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>review_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[review_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>review_count</remote-alias>
+              <ordinal>19</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>review_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[review_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>review_score</remote-alias>
+              <ordinal>20</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>delivery_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[delivery_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>delivery_days</remote-alias>
+              <ordinal>21</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>137</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>delivery_variance_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[delivery_variance_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>delivery_variance_days</remote-alias>
+              <ordinal>22</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>184</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>on_time_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[on_time_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>on_time_flag</remote-alias>
+              <ordinal>23</ordinal>
+              <family>olist_order_analysis.tsv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='olist_order_analysis.tsv' id='olist_order_analysis.tsv_E923EB20294646F88EFB480DFA7C56F6'>
+            <properties context=''>
+              <relation connection='textscan.1q0nmod1yhgguz18ilhvv1rh1yzt' name='olist_order_analysis.tsv' table='[olist_order_analysis#tsv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='string' name='order_id' ordinal='0' />
+                  <column datatype='string' name='customer_id' ordinal='1' />
+                  <column datatype='string' name='customer_unique_id' ordinal='2' />
+                  <column datatype='string' name='customer_city' ordinal='3' />
+                  <column datatype='string' name='customer_state' ordinal='4' />
+                  <column datatype='string' name='order_status' ordinal='5' />
+                  <column datatype='datetime' name='order_purchase_timestamp' ordinal='6' />
+                  <column datatype='datetime' name='order_approved_at' ordinal='7' />
+                  <column datatype='datetime' name='order_delivered_carrier_date' ordinal='8' />
+                  <column datatype='datetime' name='order_delivered_customer_date' ordinal='9' />
+                  <column datatype='datetime' name='order_estimated_delivery_date' ordinal='10' />
+                  <column datatype='integer' name='item_count' ordinal='11' />
+                  <column datatype='integer' name='distinct_product_count' ordinal='12' />
+                  <column datatype='integer' name='seller_count' ordinal='13' />
+                  <column datatype='real' name='merchandise_value' ordinal='14' />
+                  <column datatype='real' name='freight_value' ordinal='15' />
+                  <column datatype='real' name='item_total_value' ordinal='16' />
+                  <column datatype='integer' name='payment_record_count' ordinal='17' />
+                  <column datatype='real' name='payment_value' ordinal='18' />
+                  <column datatype='integer' name='review_count' ordinal='19' />
+                  <column datatype='real' name='review_score' ordinal='20' />
+                  <column datatype='integer' name='delivery_days' ordinal='21' />
+                  <column datatype='integer' name='delivery_variance_days' ordinal='22' />
+                  <column datatype='integer' name='on_time_flag' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1rac9v31se0o4g17chb0j1scequ5'>
+      <datasources>
+        <datasource caption='olist_order_analysis' name='federated.1rac9v31se0o4g17chb0j1scequ5' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1rac9v31se0o4g17chb0j1scequ5'>
+        <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]'>
+        <groupfilter function='level-members' level='[none:customer_state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Freight Burden by State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>Freight Cost Relative to Merchandise Value by State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='olist_order_analysis' name='federated.1rac9v31se0o4g17chb0j1scequ5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rac9v31se0o4g17chb0j1scequ5'>
+            <column caption='Freight to Merchandise %' datatype='real' name='[Calculation_1422266530529282]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([freight_value]) / SUM([merchandise_value])' />
+            </column>
+            <column-instance column='[freight_value]' derivation='Avg' name='[avg:freight_value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[merchandise_value]' derivation='Avg' name='[avg:merchandise_value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_id]' derivation='CountD' name='[ctd:order_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Freight Value' datatype='real' name='[freight_value]' role='measure' type='quantitative' />
+            <column caption='Merchandise Value' datatype='real' name='[merchandise_value]' role='measure' type='quantitative' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1422266530529282]' derivation='User' name='[usr:Calculation_1422266530529282:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1rac9v31se0o4g17chb0j1scequ5].[ctd:order_id:qk]' included-values='in-range'>
+            <min>500</min>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266530529282:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[ctd:order_id:qk]</column>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266530529282:qk]' scope='cols' value='Freight to Merchandise % (500+ Orders)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266530529282:qk]' value='p0.00%' />
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266530529282:qk]' value='Avenir' />
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]' value='Avenir' />
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[ctd:order_id:qk]' value='Avenir' />
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:merchandise_value:qk]' value='Avenir' />
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:freight_value:qk]' value='Avenir' />
+            <format attr='font-size' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]' value='7' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266530529282:qk]' num-steps='5' palette='another blu' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Avenir' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266530529282:qk]' />
+              <tooltip column='[federated.1rac9v31se0o4g17chb0j1scequ5].[ctd:order_id:qk]' />
+              <tooltip column='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:merchandise_value:qk]' />
+              <tooltip column='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:freight_value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2853591442108154' />
+                <format attr='mark-color' value='#a0cbe8' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]</rows>
+        <cols>[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266530529282:qk]</cols>
+      </table>
+      <simple-id uuid='{E7118B82-44C5-4BB2-BCAA-698E1180057A}' />
+    </worksheet>
+    <worksheet name='Fulfillment Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Avenir'>Fulfillment Map</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='olist_order_analysis' name='federated.1rac9v31se0o4g17chb0j1scequ5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1rac9v31se0o4g17chb0j1scequ5'>
+            <column caption='On-Time Rate' datatype='real' default-format='p0.00%' name='[Calculation_1422266529726464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([on_time_flag])' />
+            </column>
+            <column caption='Fulfillment Evaluable Order' datatype='string' name='[Calculation_1422266542686211]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF NOT ISNULL([on_time_flag]) THEN [order_id] END' />
+            </column>
+            <column-instance column='[delivery_days]' derivation='Avg' name='[avg:delivery_days:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[review_score]' derivation='Avg' name='[avg:review_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1422266542686211]' derivation='CountD' name='[ctd:Calculation_1422266542686211:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Delivery Days' datatype='integer' name='[delivery_days]' role='measure' type='quantitative' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='On Time Flag' datatype='integer' name='[on_time_flag]' role='measure' type='quantitative' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column caption='Review Score' datatype='real' name='[review_score]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422266529726464]' derivation='User' name='[usr:Calculation_1422266529726464:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[Longitude (generated)]' field-type='quantitative' max='-1290618.5154909417' min='-10614837.894860025' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[Latitude (generated)]' field-type='quantitative' max='720641.53634213004' min='-4126542.3827536302' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]' value='Avenir' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' palette='blue' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Avenir' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' id='legend-color' value='12' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' value='On-Time Delivery'>
+              <formatted-text>
+                <run>On-Time Delivery</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]' value='Customer State'>
+              <formatted-text>
+                <run>Customer State</run>
+              </formatted-text>
+            </format>
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' />
+              <text column='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]' />
+              <lod column='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]' />
+              <tooltip column='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:delivery_days:qk]' />
+              <tooltip column='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' />
+              <tooltip column='[federated.1rac9v31se0o4g17chb0j1scequ5].[ctd:Calculation_1422266542686211:qk]' />
+              <geometry column='[federated.1rac9v31se0o4g17chb0j1scequ5].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Avenir' />
+                <format attr='font-size' value='6' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rac9v31se0o4g17chb0j1scequ5].[Latitude (generated)]</rows>
+        <cols>[federated.1rac9v31se0o4g17chb0j1scequ5].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F2B62126-1E9F-4929-8D4F-690434041569}' />
+    </worksheet>
+    <worksheet name='KPI - Avg Delivery Days'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Avenir'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='olist_order_analysis' name='federated.1rac9v31se0o4g17chb0j1scequ5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rac9v31se0o4g17chb0j1scequ5'>
+            <column-instance column='[delivery_days]' derivation='Avg' name='[avg:delivery_days:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Delivery Days' datatype='integer' name='[delivery_days]' role='measure' type='quantitative' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Avenir' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:delivery_days:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontsize='28'><![CDATA[<[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:delivery_days:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='14'>Avg. Delivery Days</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FE8CF3B8-54DC-481C-A5A6-18FE3C5EC85F}' />
+    </worksheet>
+    <worksheet name='KPI - Avg Review Score'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Avenir'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='olist_order_analysis' name='federated.1rac9v31se0o4g17chb0j1scequ5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rac9v31se0o4g17chb0j1scequ5'>
+            <column-instance column='[review_score]' derivation='Avg' name='[avg:review_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='Review Score' datatype='real' name='[review_score]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='text-format' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Avenir' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontsize='28'><![CDATA[<[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='14'>Avg. Review Score</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{12461A27-0A49-4201-BD76-09BA7E2FC89F}' />
+    </worksheet>
+    <worksheet name='KPI - On-Time Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Avenir'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='olist_order_analysis' name='federated.1rac9v31se0o4g17chb0j1scequ5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rac9v31se0o4g17chb0j1scequ5'>
+            <column caption='On-Time Rate' datatype='real' default-format='p0.00%' name='[Calculation_1422266529726464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([on_time_flag])' />
+            </column>
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='On Time Flag' datatype='integer' name='[on_time_flag]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422266529726464]' derivation='User' name='[usr:Calculation_1422266529726464:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Avenir' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontsize='28'><![CDATA[<[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='14'>On-Time Delivery</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{40297A54-EC82-4DF5-B374-ECDE30984D70}' />
+    </worksheet>
+    <worksheet name='KPI - Total Orders'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Avenir'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='olist_order_analysis' name='federated.1rac9v31se0o4g17chb0j1scequ5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rac9v31se0o4g17chb0j1scequ5'>
+            <column-instance column='[order_id]' derivation='CountD' name='[ctd:order_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Avenir' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rac9v31se0o4g17chb0j1scequ5].[ctd:order_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontsize='28'><![CDATA[<[federated.1rac9v31se0o4g17chb0j1scequ5].[ctd:order_id:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='14'>Total Orders</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6E032DFE-5716-4CE3-B850-F65D4FF04442}' />
+    </worksheet>
+    <worksheet name='Monthly On-Time Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Avenir'>Monthly On-Time Delivery Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='olist_order_analysis' name='federated.1rac9v31se0o4g17chb0j1scequ5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rac9v31se0o4g17chb0j1scequ5'>
+            <column caption='On-Time Rate' datatype='real' default-format='p0.00%' name='[Calculation_1422266529726464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([on_time_flag])' />
+            </column>
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='On Time Flag' datatype='integer' name='[on_time_flag]' role='measure' type='quantitative' />
+            <column caption='Order Purchase Timestamp' datatype='datetime' name='[order_purchase_timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[order_purchase_timestamp]' derivation='Month-Trunc' name='[tmn:order_purchase_timestamp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1422266529726464]' derivation='User' name='[usr:Calculation_1422266529726464:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' included-values='in-range'>
+            <min>0.0</min>
+            <max>1.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]</column>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[tmn:order_purchase_timestamp:qk]' field-type='quantitative' max='#2018-08-31 00:00:00#' min='#2017-01-01 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[tmn:order_purchase_timestamp:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' value='p0.00%' />
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' value='Avenir' />
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[tmn:order_purchase_timestamp:qk]' value='Avenir' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Avenir' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' value='Avenir' />
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[tmn:order_purchase_timestamp:qk]' value='Avenir' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Avenir' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#68aee6' />
+                <format attr='mark-markers-mode' value='auto' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]</rows>
+        <cols>[federated.1rac9v31se0o4g17chb0j1scequ5].[tmn:order_purchase_timestamp:qk]</cols>
+      </table>
+      <simple-id uuid='{80AE8930-5CEB-42FF-A423-065595201913}' />
+    </worksheet>
+    <worksheet name='Review by Delivery Performance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Avenir'>Average Review Score by Delivery Performance</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='olist_order_analysis' name='federated.1rac9v31se0o4g17chb0j1scequ5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rac9v31se0o4g17chb0j1scequ5'>
+            <column caption='Delivery Performance' datatype='string' name='[Calculation_1422266529918977]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([delivery_variance_days]) THEN NULL&#10;ELSEIF [delivery_variance_days] &lt; 0 THEN &quot;Early&quot;&#10;ELSEIF [delivery_variance_days] = 0 THEN &quot;On time&quot;&#10;ELSEIF [delivery_variance_days] &lt;= 3 THEN &quot;1-3 days late&quot;&#10;ELSEIF [delivery_variance_days] &lt;= 7 THEN &quot;4-7 days late&quot;&#10;ELSEIF [delivery_variance_days] &lt;= 14 THEN &quot;8-14 days late&quot;&#10;ELSE &quot;15+ days late&quot;&#10;END' />
+            </column>
+            <column-instance column='[review_score]' derivation='Avg' name='[avg:review_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Delivery Variance Days' datatype='integer' name='[delivery_variance_days]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422266529918977]' derivation='None' name='[none:Calculation_1422266529918977:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='Review Score' datatype='real' name='[review_score]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:Calculation_1422266529918977:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_1422266529918977:nk]' member='&quot;1-3 days late&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1422266529918977:nk]' member='&quot;15+ days late&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1422266529918977:nk]' member='&quot;4-7 days late&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1422266529918977:nk]' member='&quot;8-14 days late&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1422266529918977:nk]' member='&quot;Early&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1422266529918977:nk]' member='&quot;On time&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:Calculation_1422266529918977:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Early&quot;</bucket>
+              <bucket>&quot;On time&quot;</bucket>
+              <bucket>&quot;1-3 days late&quot;</bucket>
+              <bucket>&quot;4-7 days late&quot;</bucket>
+              <bucket>&quot;8-14 days late&quot;</bucket>
+              <bucket>&quot;15+ days late&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:Calculation_1422266529918977:nk]</column>
+            <column>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' field-type='quantitative' max='5.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='21' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:Calculation_1422266529918977:nk]' value='Avenir' />
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' value='Avenir' />
+            <format attr='vertical-align' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:Calculation_1422266529918977:nk]' value='center' />
+            <format attr='text-align' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:Calculation_1422266529918977:nk]' value='right' />
+            <format attr='text-format' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' palette='another blu' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Avenir' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-family' field='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' value='Avenir' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' />
+              <text column='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Avenir' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#a0cbe8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rac9v31se0o4g17chb0j1scequ5].[none:Calculation_1422266529918977:nk]</rows>
+        <cols>[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]</cols>
+      </table>
+      <simple-id uuid='{3F191110-C562-4850-A8A6-D47A6D66F06A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Olist Fulfillment Dashboard'>
+      <style />
+      <size maxheight='860' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='range' />
+      <datasources>
+        <datasource caption='olist_order_analysis' name='federated.1rac9v31se0o4g17chb0j1scequ5' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1rac9v31se0o4g17chb0j1scequ5'>
+        <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='89740' id='18' param='horz' type-v2='layout-flow' w='98666' x='667' y='989'>
+            <zone h='89740' id='16' type-v2='layout-basic' w='98666' x='667' y='989'>
+              <zone forceUpdate='true' h='9280' id='3' type-v2='text' w='98666' x='667' y='989'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Avenir' fontsize='26'>Olist Fulfillment &amp; Customer Experience</run>
+                  <run fontalignment='1'>Æ&#10;</run>
+                  <run fontalignment='1' fontcolor='#000000' fontname='Avenir' fontsize='14'>Brazilian E-Commerce Marketplace | 2017 - 2018</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='27386' id='10' param='horz' type-v2='layout-flow' w='53833' x='45500' y='22943'>
+                <zone h='27386' id='12' name='Review by Delivery Performance' w='53833' x='45500' y='22943'>
+                  <layout-cache minwidth='200' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='27386' id='11' name='Monthly On-Time Trend' w='44833' x='667' y='22943'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='40400' id='24' is-fixed='true' type-v2='layout-basic' w='98666' x='667' y='50329'>
+                <zone h='40400' id='13' param='horz' type-v2='layout-flow' w='44833' x='667' y='50329'>
+                  <zone fixed-size='493' h='40400' id='15' is-fixed='true' name='Fulfillment Map' w='44833' x='667' y='50329'>
+                    <layout-cache minheight='244' minwidth='202' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='40400' id='25' param='horz' type-v2='layout-flow' w='53833' x='45500' y='50329'>
+                  <zone h='40400' id='14' name='Freight Burden by State' w='53833' x='45500' y='50329'>
+                    <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='12674' id='6' name='KPI - Total Orders' show-title='false' w='24667' x='667' y='10269'>
+                <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12674' id='7' name='KPI - On-Time Rate' show-title='false' w='24665' x='25334' y='10269'>
+                <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12674' id='8' name='KPI - Avg Delivery Days' show-title='false' w='24668' x='49999' y='10269'>
+                <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12674' id='9' name='KPI - Avg Review Score' show-title='false' w='24666' x='74667' y='10269'>
+                <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone fixed-size='67' h='8282' id='22' is-fixed='true' mode='checkdropdown' name='Fulfillment Map' param='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]' type-v2='filter' values='all' w='53833' x='45500' y='90729'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8282' id='23' type-v2='layout-flow' w='44833' x='667' y='90729'>
+            <zone fixed-size='74' h='8282' id='19' is-fixed='true' name='Fulfillment Map' pane-specification-id='0' param='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' type-v2='color' w='44833' x='667' y='90729'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98022' id='26' param='vert' type-v2='layout-flow' w='98666' x='667' y='989'>
+                <zone forceUpdate='true' h='9280' id='3' type-v2='text' w='98666' x='667' y='989'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Avenir' fontsize='26'>Olist Fulfillment &amp; Customer Experience</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Avenir' fontsize='14'>Brazilian E-Commerce Marketplace | 2017 - 2018</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='12674' id='6' is-fixed='true' name='KPI - Total Orders' show-title='false' w='24667' x='667' y='10269'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='12674' id='7' is-fixed='true' name='KPI - On-Time Rate' show-title='false' w='24665' x='25334' y='10269'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='12674' id='8' is-fixed='true' name='KPI - Avg Delivery Days' show-title='false' w='24668' x='49999' y='10269'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='12674' id='9' is-fixed='true' name='KPI - Avg Review Score' show-title='false' w='24666' x='74667' y='10269'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='228' h='27386' id='11' is-fixed='true' name='Monthly On-Time Trend' w='44833' x='667' y='22943'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='228' h='27386' id='12' is-fixed='true' name='Review by Delivery Performance' w='53833' x='45500' y='22943'>
+                  <layout-cache minwidth='200' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='67' h='8282' id='22' mode='checkdropdown' name='Fulfillment Map' param='[federated.1rac9v31se0o4g17chb0j1scequ5].[none:customer_state:nk]' type-v2='filter' values='all' w='53833' x='45500' y='90729'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40400' id='15' is-fixed='true' name='Fulfillment Map' w='44833' x='667' y='50329'>
+                  <layout-cache minheight='244' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='74' h='8282' id='19' name='Fulfillment Map' pane-specification-id='0' param='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' type-v2='color' w='44833' x='667' y='90729'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40400' id='14' is-fixed='true' name='Freight Burden by State' w='53833' x='45500' y='50329'>
+                  <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5A34E43B-1A60-451F-8DF0-2C5EF517CF77}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI - Total Orders'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D19CEE22-79BD-4CF3-B713-76B1103C0B47}' />
+    </window>
+    <window class='worksheet' name='KPI - On-Time Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C595A1A9-9831-4437-8B3B-24DFC180B1D8}' />
+    </window>
+    <window class='worksheet' name='KPI - Avg Delivery Days'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3FB43450-B9EA-4FA4-9142-F2E6151C5DFC}' />
+    </window>
+    <window class='worksheet' name='KPI - Avg Review Score'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AB40BDF8-20F7-474B-AD06-F566620CD5B2}' />
+    </window>
+    <window class='worksheet' name='Review by Delivery Performance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rac9v31se0o4g17chb0j1scequ5].[avg:review_score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E5FB7690-346C-4A80-8A26-F5A4FA8B0E45}' />
+    </window>
+    <window class='worksheet' name='Monthly On-Time Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C6DDA2C3-9EFD-40D4-8B4C-556125D2BE72}' />
+    </window>
+    <window class='worksheet' name='Fulfillment Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266529726464:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{E09B5B30-E5BE-42C3-BD3A-7A17DF753790}' />
+    </window>
+    <window class='worksheet' name='Freight Burden by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rac9v31se0o4g17chb0j1scequ5].[usr:Calculation_1422266530529282:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{BF644EE9-5584-4AD8-ADB5-267C5C81F76E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Olist Fulfillment Dashboard'>
+      <viewpoints>
+        <viewpoint name='Freight Burden by State'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Fulfillment Map'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='KPI - Avg Delivery Days'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Avg Review Score'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - On-Time Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total Orders'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly On-Time Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Review by Delivery Performance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{AD0A5789-6E6D-4709-8389-8DBBFB1E7CBA}' />
+    </window>
+  </windows>
+</workbook>
