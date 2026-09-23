@@ -367,7 +367,6 @@ olist-analysis/
 │
 ├── tableau/
 │   ├── Olist Fulfillment & Customer Experience Dashboard.twb
-│   ├── Olist Fulfillment & Customer Experience Dashboard.png
 │   └── olist_fulfillment_dashboard.twbx
 │
 ├── .gitignore
